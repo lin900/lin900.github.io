@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>FileSystem</title>
+      <link href="/2024/05/26/FileSystem/"/>
+      <url>/2024/05/26/FileSystem/</url>
+      
+        <content type="html"><![CDATA[<h2 id="文件系统"><a href="#文件系统" class="headerlink" title="文件系统"></a>文件系统</h2><h3 id="块设备"><a href="#块设备" class="headerlink" title="块设备"></a>块设备</h3><p>传统机械式硬盘：磁盘内有多个轨道，探头一次读取一块数据，单字节读取是不可能的<br>固态硬盘（SSD，Solid State Disk）：阵列式存储，一次读取一行</p><h3 id="基于indoe的文件系统"><a href="#基于indoe的文件系统" class="headerlink" title="基于indoe的文件系统"></a>基于indoe的文件系统</h3><p>indoe是常规文件的数据索引方式<br>48K+6M+1G</p><h3 id="基于表的文件系统"><a href="#基于表的文件系统" class="headerlink" title="基于表的文件系统"></a>基于表的文件系统</h3><h4 id="FAT-文件分配表-File-Allocation-Table"><a href="#FAT-文件分配表-File-Allocation-Table" class="headerlink" title="FAT:文件分配表(File Allocation Table)"></a>FAT:文件分配表(File Allocation Table)</h4><p>Windows系统使用至今<br>数据基本块单位为簇，4K大小</p><p>FAT是簇序号的数组，表示下一个簇，文件由簇的链表形式组织</p><p>链表容易断（硬盘坏道），创建了一模一样的FAT2当备份</p><p>遍历链表，文件越大，读写越慢</p><p>FAT32中，文件大小元数据使用32位整数表示，文件最大为4G</p><h4 id="exFAT-U盘常用格式"><a href="#exFAT-U盘常用格式" class="headerlink" title="exFAT:U盘常用格式"></a>exFAT:U盘常用格式</h4><ul><li>与FAT32不兼容</li><li>使用位图加快空间分配</li><li>Unicode保存长文件名</li><li>目录查找文件使用哈希对比</li><li>允许4G以上文件（文件大小使用8字节）</li><li>使用校验码保证元数据完整性</li></ul><h4 id="NTFS-NEW-Technology-File-System"><a href="#NTFS-NEW-Technology-File-System" class="headerlink" title="NTFS:NEW Technology File System"></a>NTFS:NEW Technology File System</h4><p>现代Windows系统中广泛使用的文件系统<br>核心结构主文件表（Master File Table，MFT）</p><p>前16个保留记录为元数据，记录基本信息<br>$MFT自举：存储自身数据<br>MFT为一个B+树结构</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Deadlock</title>
       <link href="/2024/05/25/Deadlock/"/>
       <url>/2024/05/25/Deadlock/</url>
