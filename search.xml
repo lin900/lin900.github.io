@@ -4,6 +4,45 @@
   
     
     <entry>
+      <title>数据库系统概述</title>
+      <link href="/2024/06/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/"/>
+      <url>/2024/06/22/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</url>
+      
+        <content type="html"><![CDATA[<h2 id="数据库管理系统（DBMS）"><a href="#数据库管理系统（DBMS）" class="headerlink" title="数据库管理系统（DBMS）"></a>数据库管理系统（DBMS）</h2><p>由一个相互关联的数据的集合和一组访问这些数据的程序组成。DBMS主要目标是提供一种可以方便，高效存取数据库信息的途径</p><p>使用数据库的方式：</p><ul><li>联机事务处理，对小部分数据进行更新</li><li>数据分析，审阅数据，得出结论</li></ul><h3 id="文件处理系统的弊端"><a href="#文件处理系统的弊端" class="headerlink" title="文件处理系统的弊端"></a>文件处理系统的弊端</h3><ul><li>数据冗余和不一致</li><li>数据访问困难，不支持一种便捷高效的方式获取所需数据</li><li>数据孤立</li><li>完整性问题，数据的一致性约束</li><li>原子性问题</li><li>并发访问异常</li><li>安全性问题，数据访问权限</li></ul><h3 id="数据视图"><a href="#数据视图" class="headerlink" title="数据视图"></a>数据视图</h3><p>提供给用户的抽象视图</p><p>数据模型</p><ul><li>关系模型（relational model）</li><li>实体-联系模型（entity-relationship model）</li><li>半结构化模型(semi-structured model)</li><li>基于对象的数据模型(object-based model)</li></ul><p>关系数据模型：数据以表的形式呈现</p><p>数据抽象</p><ul><li>物理层，数据存储的底层逻辑，使用索引支持高效检索</li><li>逻辑层，存储什么数据，数据之间的关系</li><li>视图层，简化交互，提供安全性机制</li></ul><p>实例和模式：实例是特定时刻存储在数据库信息的集合，数据库的总体设计称为模式（物理模式，逻辑模式，视图有子模式）</p><h3 id="数据库语言"><a href="#数据库语言" class="headerlink" title="数据库语言"></a>数据库语言</h3><p>数据库定义语言(DLL)定义数据库模式，数据操纵语言（DML）表示数据库查询和更新，SQL包含两种。</p><p>DLL提供</p><ul><li>域约束</li><li>引用完整性</li><li>授权<br>输出存在数据字典中，数据字典包含元数据</li></ul><p>DML：增删改查<br>过程化DML：指定需要的数据和如何获取<br>声明式DML：无需指定</p><h3 id="数据库引擎"><a href="#数据库引擎" class="headerlink" title="数据库引擎"></a>数据库引擎</h3><p>存储管理器，减少主存和磁盘的移动需求</p><p>查询处理器部件，简化数据访问</p><p>事务管理部件，原子性操作</p><p>存储管理器部件：</p><ul><li>权限及完整性管理器：检测完整性和用户权限</li><li>事务管理器：并发事务执行不冲突</li><li>文件管理器：管理磁盘分配</li><li>缓冲区管理器：管理内存写入<br>数据结构：</li><li>数据文件：数据库本身</li><li>数据字典：元数据</li><li>索引</li></ul><p>查询处理器组件：</p><ul><li>DDL解释器，解释DLL存储在数据字典</li><li>DML编译器，翻译DML，查询优化</li><li>查询执行引擎，执行编译生成的低级指令</li></ul><p>事务管理组件：</p><ul><li>恢复管理器</li><li>并发控制管理器</li></ul><h3 id="数据库和应用体系结构"><a href="#数据库和应用体系结构" class="headerlink" title="数据库和应用体系结构"></a>数据库和应用体系结构</h3><p>两层体系结构：用户-应用程序-数据库系统<br>三层体系结构：用户-应用客户-应用服务器-数据库系统</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>原子更新技术</title>
+      <link href="/2024/06/10/%E5%8E%9F%E5%AD%90%E6%9B%B4%E6%96%B0%E6%8A%80%E6%9C%AF/"/>
+      <url>/2024/06/10/%E5%8E%9F%E5%AD%90%E6%9B%B4%E6%96%B0%E6%8A%80%E6%9C%AF/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>计算机网络概述</title>
+      <link href="/2024/06/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%A6%82%E8%BF%B0/"/>
+      <url>/2024/06/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%A6%82%E8%BF%B0/</url>
+      
+        <content type="html"><![CDATA[<h2 id="什么是计算机网络"><a href="#什么是计算机网络" class="headerlink" title="什么是计算机网络"></a>什么是计算机网络</h2><p>通信模型：信源-&gt;发送设备-&gt;信道（有噪声源干扰）-&gt;接受设备-&gt;信宿<br>计算机网络就是互联的，自治的计算机集合，由通信链路链接<br>通过交换网络互联主机</p><h3 id="Internet"><a href="#Internet" class="headerlink" title="Internet"></a>Internet</h3><p>全球最大的互联网络<br>互联网络：网络的网络，Internet Service Provider (ISP)</p><p>计算设备集合：主机&#x3D;端系统<br>通信链路：光纤，铜缆，卫星<br>分组交换：路由器，交换机</p><h3 id="网络协议"><a href="#网络协议" class="headerlink" title="网络协议"></a>网络协议</h3><p>进行网络中数据交换而建立的规则，标准或约定，规定了通信实体交换信息的格式，意义，顺序以及针对受到信息或发生的事件采取的动作<br>协议三要素：</p><ul><li>语法：数据和控制信息的结构</li><li>语义：需要发出什么控制信息，做出何种响应</li><li>时序：事件顺序，速度匹配</li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>UsingFileSystem</title>
       <link href="/2024/06/02/UsingFileSystem/"/>
       <url>/2024/06/02/UsingFileSystem/</url>
